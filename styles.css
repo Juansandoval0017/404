@@ -1,0 +1,66 @@
+html,body{
+    padding: 10px;
+    box-sizing: content-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    min-height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.container img{
+    width: 49%;
+}
+.context{
+    width: 49%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.context h1{
+    font-size:40px
+}
+
+.context p{
+    max-width: 350px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.context button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.5s ease;
+}
+
+.context button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container img{
+        width: 100%;
+    }
+    .context{
+        width: 100%;
+    }
+}
